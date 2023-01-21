@@ -2,7 +2,7 @@
 
 const {
   db,
-  models: { User, Result, Question },
+  User, Result, Question
 } = require("../server/db");
 
 const userData = require("./data/user");
