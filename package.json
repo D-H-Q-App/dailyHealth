@@ -1,17 +1,22 @@
 {
-  "name": "final-project",
+  "name": "my-application",
   "version": "0.0.1",
   "description": "A review time project",
   "main": "index.js",
   "scripts": {
     "start": "npm run build-watch & npm run start-server ",
     "build-watch": "webpack -w",
-    "start-server": "nodemon --watch server -e js,html server/index.js"
+    "start-server": "nodemon --watch server -e js,html server/index.js",
+    "seed": "node script/seed.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.5",
     "@reduxjs/toolkit": "^1.8.1",
     "axios": "^0.27.2",
     "cors": "^2.8.5",
@@ -23,6 +28,7 @@
     "react-redux": "^v8.0.1",
     "react-router-dom": "^6.3.0",
     "sequelize": "^6.20.0",
+    "volleyball": "^1.5.1",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2"
   },

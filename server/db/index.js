@@ -9,9 +9,8 @@ Result.belongsTo(Question);
 
 module.exports = {
   db,
-  models: {
     User,
     Question,
     Result,
-  },
+
 };
