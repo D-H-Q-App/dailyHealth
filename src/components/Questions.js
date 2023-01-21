@@ -1,7 +1,8 @@
 import React, { Fragment, useEffect } from "react";
 import { fetchAllQuestionsAsync } from "../store";
 import { useDispatch, useSelector } from "react-redux";
-import { FormGroup, FormControlLabel, Checkbox } from "@mui/material";
+import { FormGroup, FormControlLabel, Checkbox, Button} from "@mui/material";
+
 
 
 export default function Questions() {
@@ -16,14 +17,19 @@ export default function Questions() {
     return (
       <div key={question.id}>
         <h3> {question.question}</h3>
-        <div className="button-update">
-        <FormGroup>
-  <FormControlLabel control={<Checkbox />} label="yes" />
-  <FormControlLabel control={<Checkbox />} label="no" />
-</FormGroup>
-      </div>
+        <div>
+          <FormGroup>
+            <FormControlLabel control={<Checkbox />} label="yes" />
+            <FormControlLabel control={<Checkbox />} label="no" />
+          </FormGroup>
+        </div>
       </div>
     );
   });
-  return <Fragment>{renderedQuestions}</Fragment>;
+  return <Fragment>
+    {renderedQuestions}
+    <div>
+    <Button color="primary" size="medium" variant="outlined">Submit</Button>
+    </div>
+  </Fragment>;
 }
