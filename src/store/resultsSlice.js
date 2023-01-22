@@ -13,6 +13,20 @@ export const fetchYesResultAsync = createAsyncThunk(
   }
 );
 
+export const fetchYesUserResultAsync = createAsyncThunk(
+  "result/fetchYesResult",
+  async () => {
+    try {
+      const response = await axios.get("http://localhost:3000/api/userResult");
+      return response.data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+);
+
+
+
 export const creatingYesResultsAsync = createAsyncThunk(
   "result/creatingYesResult",
   async ({ids}) => {
@@ -33,8 +47,7 @@ const resultSlice = createSlice({
   reducers: {},
   extraReducers(builder) {
     builder.addCase(fetchYesResultAsync.fulfilled, (state, action) => {
-
-
+      return action.payload
     });
     builder.addCase(creatingYesResultsAsync.fulfilled, (state, action) => {
       state.submitting = false

@@ -3,12 +3,15 @@ import { fetchAllQuestionsAsync } from "../store";
 import { useDispatch, useSelector } from "react-redux";
 import { FormGroup, FormControlLabel, Checkbox, Button} from "@mui/material";
 import { creatingYesResultAsync } from "../store";
+import { useNavigate } from "react-router-dom";
+
 
 
 
 
 export default function Questions() {
   const [yesQuestions, setYesQuestions]= useState([]);
+  const navigate = useNavigate()
   const dispatch = useDispatch();
   const questions = useSelector((state) => state.questions);
   const result = useSelector((state) => state.result);
@@ -43,6 +46,7 @@ function handleSubmit(){
   //   dispatch(creatingYesResultAsync({id}))
   // })
   dispatch(creatingYesResultAsync({ids:yesQuestions}))
+  navigate('/results')
 }
 
   const renderedQuestions = questions.map((question) => {
@@ -61,7 +65,7 @@ function handleSubmit(){
   return <Fragment>
     {renderedQuestions}
     <div>
-    <Button color="primary" size="medium" variant="outlined" onClick={handleSubmit}>Submit</Button>
+    <Button onClick={handleSubmit} color="primary" size="medium" variant="outlined" >Submit</Button>
     </div>
   </Fragment>;
 }

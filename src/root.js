@@ -6,6 +6,7 @@ import HomePage from "./pages/Home";
 import AboutUs  from "./pages/AboutUs"
 import AboutAyurveda from "./pages/AboutAyurveda";
 import MetabolicType from "./pages/MetabolicType";
+// import ResultList from "./components/ResultList";
 
 const Root = () => {
   return (
@@ -14,6 +15,7 @@ const Root = () => {
       <main>
         <Routes>
           <Route path="/questions" element={<Questions />} />
+          {/* <Route path="/results" element={<ResultList/>} /> */}
           <Route path="/" element={<HomePage />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/aboutayurveda" element={<AboutAyurveda />} />
