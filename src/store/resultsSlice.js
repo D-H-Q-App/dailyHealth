@@ -12,12 +12,14 @@ export const fetchYesResultAsync = createAsyncThunk(
     }
   }
 );
-export const creatingYesResultAsync = createAsyncThunk(
+export const creatingYesResultsAsync = createAsyncThunk(
   "result/creatingYesResult",
-  async (id) => {
+  async ({ids}) => {
     try {
-      const response = await axios.post(`http://localhost:3000/api/userresults/${id}`);
-      return response.data;
+      for(let i = 0; i < ids.length; i++){
+       await axios.post(`http://localhost:3000/api/userresults`, {resultId: ids[i], userId: 1});
+      }
+      return true;
     } catch (error) {
       console.log(error);
     }
@@ -26,15 +28,21 @@ export const creatingYesResultAsync = createAsyncThunk(
 
 const resultSlice = createSlice({
   name: "result",
-  initialState: [],
+  initialState: {submitting:false, success:false, resultId:[]},
   reducers: {},
   extraReducers(builder) {
     builder.addCase(fetchYesResultAsync.fulfilled, (state, action) => {
-      return action.payload;
+
+
     });
-    builder.addCase(creatingYesResultAsync.fulfilled, (state, action) => {
-      return action.payload;
+    builder.addCase(creatingYesResultsAsync.fulfilled, (state, action) => {
+      state.submitting = false
+      state.success=true
     });
+    builder.addCase(creatingYesResultsAsync.pending, (state, action) => {
+      state.submitting=true
+    });
+
   },
 });
 
