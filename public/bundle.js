@@ -24802,15 +24802,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _mui_material_AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/AppBar */ "./node_modules/@mui/material/AppBar/AppBar.js");
-/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
-/* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Toolbar */ "./node_modules/@mui/material/Toolbar/Toolbar.js");
-/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/material/Typography */ "./node_modules/@mui/material/Typography/Typography.js");
-/* harmony import */ var _mui_material_IconButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/IconButton */ "./node_modules/@mui/material/IconButton/IconButton.js");
-/* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/icons-material/Menu */ "./node_modules/@mui/icons-material/Menu.js");
-/* harmony import */ var _mui_icons_material_Spa__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material/Spa */ "./node_modules/@mui/icons-material/Spa.js");
-/* harmony import */ var _mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/MenuItem */ "./node_modules/@mui/material/MenuItem/MenuItem.js");
-/* harmony import */ var _mui_material_Menu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/Menu */ "./node_modules/@mui/material/Menu/Menu.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var _mui_material_AppBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/AppBar */ "./node_modules/@mui/material/AppBar/AppBar.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Toolbar */ "./node_modules/@mui/material/Toolbar/Toolbar.js");
+/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/material/Typography */ "./node_modules/@mui/material/Typography/Typography.js");
+/* harmony import */ var _mui_material_IconButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/IconButton */ "./node_modules/@mui/material/IconButton/IconButton.js");
+/* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/icons-material/Menu */ "./node_modules/@mui/icons-material/Menu.js");
+/* harmony import */ var _mui_icons_material_Spa__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/icons-material/Spa */ "./node_modules/@mui/icons-material/Spa.js");
+/* harmony import */ var _mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/material/MenuItem */ "./node_modules/@mui/material/MenuItem/MenuItem.js");
+/* harmony import */ var _mui_material_Menu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/material/Menu */ "./node_modules/@mui/material/Menu/Menu.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -24827,12 +24828,32 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 function Navbar() {
+  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useNavigate)();
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
     _useState2 = _slicedToArray(_useState, 2),
     anchorEl = _useState2[0],
     setAnchorEl = _useState2[1];
   var openMenu = Boolean(anchorEl);
+  var redirectToAboutUs = function redirectToAboutUs() {
+    navigate("/aboutUs");
+  };
+  var redirectToAyurveda = function redirectToAyurveda() {
+    navigate("/aboutayurveda");
+  };
+  var redirectToMetabolicType = function redirectToMetabolicType() {
+    navigate("/metabolictype");
+  };
+  var redirectToHome = function redirectToHome() {
+    navigate("/");
+  };
+
+  // const redirectToMetabolicType = () => {
+  //   navigate("/metabolicType")
+  // }
+
   var handleClick = function handleClick(event) {
     setAnchorEl(event.currentTarget);
     console.log(event.currentTarget);
@@ -24840,14 +24861,12 @@ function Navbar() {
   var handleClose = function handleClose() {
     setAnchorEl(null);
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    sx: {
-      flexGrow: 1
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_AppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_AppBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     position: "static",
     color: "secondary"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material_Spa__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    onClick: redirectToHome
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
     size: "large",
     edge: "start",
     color: "inherit",
@@ -24855,12 +24874,12 @@ function Navbar() {
     sx: {
       mr: 2
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_7__["default"], {
     "aria-controls": "basix-menu",
-    "aria-aria-haspopup": "true",
+    "aria-haspopup": "true",
     "aria-expanded": openMenu ? 'true' : undefined,
     onClick: handleClick
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Menu__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Menu__WEBPACK_IMPORTED_MODULE_8__["default"], {
     color: "secondary",
     id: "basic-menu",
     open: openMenu,
@@ -24875,20 +24894,37 @@ function Navbar() {
       vertical: 'top',
       horizontal: 'right'
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
     color: "secondary",
-    onClick: handleClose
-  }, "About Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    onClick: function onClick() {
+      redirectToAboutUs();
+      handleClose();
+    }
+  }, "About Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
     color: "secondary",
-    onClick: handleClose
-  }, "About Ayurveda"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    onClick: function onClick() {
+      redirectToAyurveda();
+      handleClose();
+    }
+  }, "About Ayurveda"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
     color: "secondary",
-    onClick: handleClose
-  }, "Metabolic Types"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material_Spa__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    onClick: function onClick() {
+      redirectToMetabolicType();
+      handleClose();
+    }
+  }, "Metabolic Types"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    color: "secondary",
+    onClick: function onClick() {
+      redirectToHome();
+      handleClose();
+    }
+  }, "Back to Home"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    onClick: redirectToHome,
     variant: "h6",
+    align: "center",
     component: "div",
     sx: {
-      flexGrow: 1
+      flexGrow: 6
     }
   }, "D.H.Q."))));
 }
@@ -24947,6 +24983,46 @@ function Questions() {
 
 /***/ }),
 
+/***/ "./src/pages/AboutAyurveda.js":
+/*!************************************!*\
+  !*** ./src/pages/AboutAyurveda.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ AboutAyurveda)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function AboutAyurveda() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, " What is Ayurveda? Ayurveda, a natural system of medicine, originated in India more than 3,000 years ago. The term\xA0Ayurveda\xA0is derived from the Sanskrit words\xA0ayur\xA0(life) and\xA0veda\xA0(science or knowledge). Thus,\xA0Ayurveda translates to\xA0knowledge of life. Based on the idea that disease is due to an imbalance or stress in a person's consciousness, Ayurveda encourages certain lifestyle interventions and natural therapies to regain a balance between the body, mind, spirit, and the environment. Ayurveda treatment starts with an internal purification process, followed by a special diet, herbal remedies, massage therapy, yoga, and meditation. The concepts of universal interconnectedness, the body's constitution (prakriti), and life forces (doshas) are the primary basis of ayurvedic medicine. Goals of treatment aid the person by eliminating impurities, reducing symptoms, increasing resistance to disease, reducing worry, and increasing harmony in life. Herbs and other plants, including oils and common spices, are used extensively in Ayurvedic treatment.\xA0 In India, Ayurveda is considered a form of medical care, equal to conventional Western medicine, traditional Chinese medicine, naturopathic medicine, and homeopathic medicine. Practitioners of Ayurveda in India undergo state-recognized, institutionalized training. Currently, Ayurvedic practitioners are not licensed in the United States, and there is no national standard for Ayurvedic training or certification. However, Ayurvedic schools have gained approval as educational institutions in some states. Ayurveda can have positive effects when used as a complementary therapy in combination with standard, conventional medical care. Many Ayurvedic materials have not been thoroughly studied in either Western or Indian research. Some of the products used in Ayurvedic medicine contain herbs, metals, minerals, or other materials that may be harmful if used improperly or without the direction of a trained practitioner. Ayurvedic medicines are regulated as dietary supplements rather than as drugs in the United States, so they are not required to meet the safety and efficacy standards for conventional medicines. These medicines can interact, or work against, the effects of Western medicines. Investigate the training and background of Ayurvedic practitioners whom you intend to use. It's important to discuss any Ayurvedic treatments that you use with your doctor. Women who are pregnant or nursing, or people who are thinking of using Ayurvedic therapy to treat a child, should consult their healthcare provider. It is important to make sure that any diagnosis of a disease or condition has been made by a healthcare provider who has substantial conventional medical training and experience with managing that disease or condition. While Ayurveda can have positive effects when used as a complementary therapy in combination with standard, conventional medical care,it should not replace standard, conventional medical care, especially when treating serious conditions.");
+}
+
+/***/ }),
+
+/***/ "./src/pages/AboutUs.js":
+/*!******************************!*\
+  !*** ./src/pages/AboutUs.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ HomePage)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function HomePage() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Since I was 14, I\u2019ve always been fascinated with health, biology, and epigenetics. I was a Nutrition minor in college and I continued learning and studying other cultures approaches to Nurtrition and Health. I struggled with many health issues including such severe allergies that I used to get five to six sinus infections a year. I tried all sorts of different diets and lifestyle practices. I decided to eat primarily vegan. That helped a lot. Then I got really into the raw vegan and digest enzyme craze. Although my sinus infections and allergies were gone, I was getting really bad puffiness and dark circles under my eyes to a point where I looked like I was dying, no joke. As an actor on camera, I started really worrying about my appearance and was seriously considering getting expensive plastic surgeries. I also couldn\u2019t eat sugar, not even fruit, without my blood sugar spiking. I couldn\u2019t eat much of anything without it aggravating the bags under my eyes and digestion. I was bloated, tired, depressed, and lethargic.  I knew something wasn\u2019t right. I was eating \u201Cso well.\u201D What was going on? I went to see a few Western doctors and nutritionists and they all said, \u201CThat\u2019s just what happens when you get older.\u201D However, if it was \u201Cold age,\u201D why would the issues come and go? I decided to seek Eastern medicine. I started seeing an Ayurvedic Practitioner once a month. Within a few months of implementing the food choices and lifestyle practices she suggested for my mind-body constitution, along with prescribed Ayurvedic herbal medicines, the dark circles and puffiness under my eyes diminished and I could eat wholesome sweets without having blood sugar spikes. I was also way more productive and happier! I was so amazed by how joyful, healthy, whole, and balanced I felt that I decided to bring a web application to help bring more balance to there health. My self education has given me the in-depth the tool to help guide you in your journey of reclaiming your health and living a more balanced and happier life. If this sounds like something you would like to accomplish, take this quiz as often as your life and click here to learn more about Ayurveda. Let\u2019s get started living your happiest and healthiest life.");
+}
+
+/***/ }),
+
 /***/ "./src/pages/Home.js":
 /*!***************************!*\
   !*** ./src/pages/Home.js ***!
@@ -24989,6 +25065,26 @@ function HomePage() {
 
 /***/ }),
 
+/***/ "./src/pages/MetabolicType.js":
+/*!************************************!*\
+  !*** ./src/pages/MetabolicType.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MetabolicType)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function MetabolicType() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "What are the three doshas? Kapha dosha Kapha types have strong frames and are naturally athletic as long they are exercising regularly to manage their tendency to gain weight. The influence of the earth and water elements makes them innately stable, compassionate, and loyal. They appreciate doing things in a methodical, step-by-step manner, and prefer a regular routine in their personal and professional lives. When imbalanced they can become unmotivated, stubborn, and complacent even when change is necessary. Their metabolism tends to be slow and their appetite for both food and stimulation is less intense than vata or pitta types. They benefit from exposing themselves to new environments, people, and occasionally fasting. Pitta dosha Pitta types are dominated by the fire element, which makes them innately strong, intense, and irritable. They tend to have a medium build and endurance with powerful musculature. They often have freckled skin that easily reddens in the sun, during exercise, massage, and when blushing. They are strong willed and good at doing what they think is right. They approach work and play with the same intensity and competitiveness. They are natural leaders and quick learners whose ability to easily comprehend and master new skills and concepts can make them judgmental or impatient toward people they feel are slower or less focused than themselves. They have strong digestion and intense appetites, both for food and challenges. If they miss a meal they are likely to become grumpy and may take a \u201Cbite\u201D out of somebody instead. It is common for them to suffer from health conditions such as inflammation, rashes, acne, and loose stool. For balance, pittas need to manage their \u201Cfiery\u201D tendencies, channeling them in productive ways and learning to recognize their destructive power. Vata dosha Vata types tend to be thin and lanky. They are very mentally and physically active and enjoy creative endeavors, meeting new people, and traveling to new places. When they are balanced, vatas are flexible, have lively imaginations, and are original thinkers. When imbalanced they can get anxious, ungrounded, and can seem \u201Cflaky\u201D about fulfilling commitments, sticking to a routine, and completing projects. They tend to run cold and dry and enjoy warm, humid weather. It\u2019s common for vata types to experience cold hands and feet, constipation, dry skin, and cracking joints. The influence of the air element in their constitution causes their energy, mood, and appetite to fluctuate dramatically. For this reason vata types often fail to eat and sleep regularly, swinging from eating heavy foods to ground and sedate themselves, or ingesting stimulants like coffee and sugar to sustain intense physical or mental activity. Insomnia and low immunity are very common problem for the sensitive vata person. What does it mean to be bi-doshic? Bi-doshic indicates that you share qualities strongly with two doshic types, and is actually how most of us are. People with dual constitutions (vata-pitta, pitta-kapha, and vata-kapha) are, in a sense, \u201Csplit.\u201D Under certain conditions, one dosha will predominate and under other circumstances the other dosha will. The best way to manage bi-doshic prakriti is by the season. For example, if you have a vata-pitta or vata-kapha prakriti, during autumn, which is a vata season, you\u2019d follow a vata-decreasing regimen. During warm weather, you\u2019d follow a pitta-decreasing regimen. During the cold and wet season, you\u2019d follow kapha. Can a person be tri-doshic? Tri-doshic means having equal amounts of each doshic influence. The tri-doshic person can be very strong, stable, and adaptable when in balance. When they are out of balance, however, they can experience poor health. The key is to preserving your personal balance is to hone your sensitivity for noticing potential imbalances that may arise from your environment or from dietary or emotional imbalances, and to adopt practices that will counter-balance these influences. For example, in autumn, a tri-doshic person would act if they were a person with a vata constitution and follow a vata-balancing lifestyle and diet. The same is true for the other seasons: Employ a pitta-balancing regimen when the weather is hot and a kapha-balancing regimen when the weather is cold and damp.");
+}
+
+/***/ }),
+
 /***/ "./src/root.js":
 /*!*********************!*\
   !*** ./src/root.js ***!
@@ -25002,22 +25098,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/NavBar */ "./src/components/NavBar.js");
 /* harmony import */ var _components_Questions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Questions */ "./src/components/Questions.js");
 /* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/Home */ "./src/pages/Home.js");
+/* harmony import */ var _pages_AboutUs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/AboutUs */ "./src/pages/AboutUs.js");
+/* harmony import */ var _pages_AboutAyurveda__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/AboutAyurveda */ "./src/pages/AboutAyurveda.js");
+/* harmony import */ var _pages_MetabolicType__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/MetabolicType */ "./src/pages/MetabolicType.js");
+
+
+
 
 
 
 
 
 var Root = function Root() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/questions",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Questions__WEBPACK_IMPORTED_MODULE_2__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Home__WEBPACK_IMPORTED_MODULE_3__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    path: "/aboutus",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_AboutUs__WEBPACK_IMPORTED_MODULE_4__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    path: "/aboutayurveda",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_AboutAyurveda__WEBPACK_IMPORTED_MODULE_5__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    path: "/metabolictype",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_MetabolicType__WEBPACK_IMPORTED_MODULE_6__["default"], null)
   }))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Root);

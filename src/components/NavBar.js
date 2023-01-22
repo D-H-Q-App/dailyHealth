@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+import createClass from 'react'
+import { useNavigate } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,9 +14,33 @@ import Menu from '@mui/material/Menu';
 
 
 function Navbar() {
+  const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState(null);
   const openMenu = Boolean(anchorEl)
 
+
+  const redirectToAboutUs = () => {
+    navigate("/aboutUs")
+  }
+
+  const redirectToAyurveda = () => {
+    navigate("/aboutayurveda")
+  }
+
+  const redirectToMetabolicType = () => {
+    navigate("/metabolictype")
+  }
+
+
+  const redirectToHome = () => {
+    navigate("/")
+  }
+
+
+
+  // const redirectToMetabolicType = () => {
+  //   navigate("/metabolicType")
+  // }
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -26,9 +52,11 @@ function Navbar() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box>
     <AppBar position="static" color="secondary">
       <Toolbar>
+      < SpaIcon onClick={
+                  redirectToHome}/>
         <IconButton
           size="large"
           edge="start"
@@ -36,7 +64,7 @@ function Navbar() {
           aria-label="menu"
           sx={{ mr: 2 }}
         >
-          <MenuIcon aria-controls="basix-menu" aria-aria-haspopup="true"
+          <MenuIcon aria-controls="basix-menu" aria-haspopup="true"
           aria-expanded={openMenu ? 'true': undefined}
           onClick={handleClick}/>
 
@@ -56,13 +84,26 @@ function Navbar() {
                 horizontal: 'right',
               }}
             >
-              <MenuItem color="secondary" onClick={handleClose}>About Us</MenuItem>
-              <MenuItem color="secondary" onClick={handleClose}>About Ayurveda</MenuItem>
-              <MenuItem color="secondary" onClick={handleClose}>Metabolic Types</MenuItem>
+              <MenuItem color="secondary" onClick={() => {
+                  redirectToAboutUs();
+                  handleClose();
+                }}>About Us</MenuItem>
+              <MenuItem color="secondary" onClick={() => {
+                  redirectToAyurveda();
+                  handleClose();
+                }}>About Ayurveda</MenuItem>
+              <MenuItem color="secondary" onClick={() => {
+                  redirectToMetabolicType();
+                  handleClose();
+                }}>Metabolic Types</MenuItem>
+              <MenuItem color="secondary" onClick={() => {
+                  redirectToHome();
+                  handleClose();
+                }}>Back to Home</MenuItem>
             </Menu>
         </IconButton>
-        < SpaIcon />
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Typography onClick={redirectToHome
+                } variant="h6" align='center' component="div" sx={{ flexGrow: 6}}>
           D.H.Q.
         </Typography>
 
