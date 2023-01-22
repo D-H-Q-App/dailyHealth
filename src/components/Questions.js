@@ -13,7 +13,7 @@ export default function Questions() {
     dispatch(fetchAllQuestionsAsync());
   }, []);
 
-  
+
 
   const renderedQuestions = questions.map((question) => {
     return (
@@ -21,7 +21,7 @@ export default function Questions() {
         <h3> {question.question}</h3>
         <div>
           <FormGroup>
-            <FormControlLabel control={<Checkbox onChange={handleChange}/>} label="yes" />
+            <FormControlLabel control={<Checkbox />} label="yes" />
             <FormControlLabel control={<Checkbox />} label="no" />
           </FormGroup>
         </div>
