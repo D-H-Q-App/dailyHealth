@@ -12,6 +12,7 @@ export const fetchYesResultAsync = createAsyncThunk(
     }
   }
 );
+
 export const creatingYesResultsAsync = createAsyncThunk(
   "result/creatingYesResult",
   async ({ids}) => {

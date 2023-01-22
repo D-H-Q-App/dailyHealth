@@ -8,6 +8,8 @@ const userResultsModel= require("./models/userResultsModel")
 Question.hasOne(Result);
 Result.belongsTo(Question);
 
+Result.belongsToMany(User, {through: userResultsModel})
+User.belongsToMany(Result, {through: userResultsModel})
 
 
 module.exports = {
