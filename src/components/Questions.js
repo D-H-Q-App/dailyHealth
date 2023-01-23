@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 
 
 
-
 export default function Questions() {
   const [yesQuestions, setYesQuestions]= useState([]);
   const navigate = useNavigate()
@@ -22,7 +21,6 @@ export default function Questions() {
 
   useEffect(() => {
     if(result.success){
-      alert("working!!")
     }
   }, [result]);
 
@@ -48,6 +46,8 @@ function handleSubmit(){
   dispatch(creatingYesResultAsync({ids:yesQuestions}))
   navigate('/results')
 }
+
+
 
   const renderedQuestions = questions.map((question) => {
     return (

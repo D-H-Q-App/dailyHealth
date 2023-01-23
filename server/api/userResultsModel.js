@@ -10,19 +10,19 @@ router.get("/", async (req, res, next) => {
   }
 });
 
+
 router.get("/:id", async (req, res, next) => {
   try {
-    const userResult = await userResultsModel.findByPk(req.params.id);
-    res.json(userResult);
-  if (!userResult) {
-    res.status(404).send("Does not exist");
-    return;
+    const userResults = await userResultsModel.findByPk(req.params.userId);
+    res.json(userResults);
+  } catch (error) {
+    next(error);
   }
-  res.json(userResult);
-} catch (error) {
-  next(error);
-}
 });
+
+// {where: {userId: req.params.userId}}
+//{where:{userId}}
+
 
 router.post("/", async (req, res, next) => {
   try {

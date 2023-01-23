@@ -1,30 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const fetchYesResultAsync = createAsyncThunk(
-  "result/fetchYesResult",
-  async () => {
-    try {
-      const response = await axios.get("http://localhost:3000/api/results?filter_by=yes");
-      return response.data;
-    } catch (error) {
-      console.log(error);
-    }
-  }
-);
-
-export const fetchYesUserResultAsync = createAsyncThunk(
-  "result/fetchYesResult",
-  async () => {
-    try {
-      const response = await axios.get("http://localhost:3000/api/userResult");
-      return response.data;
-    } catch (error) {
-      console.log(error);
-    }
-  }
-);
-
 
 
 export const creatingYesResultsAsync = createAsyncThunk(
@@ -46,9 +22,6 @@ const resultSlice = createSlice({
   initialState: {submitting:false, success:false, resultId:[]},
   reducers: {},
   extraReducers(builder) {
-    builder.addCase(fetchYesResultAsync.fulfilled, (state, action) => {
-      return action.payload
-    });
     builder.addCase(creatingYesResultsAsync.fulfilled, (state, action) => {
       state.submitting = false
       state.success=true
