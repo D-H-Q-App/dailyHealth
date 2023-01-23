@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { FormGroup, FormControlLabel, Checkbox, Button} from "@mui/material";
 import { creatingYesResultAsync } from "../store";
 import { useNavigate } from "react-router-dom";
+import { Stack } from "@mui/system";
 
 
 
@@ -34,7 +35,10 @@ setYesQuestions((previousState)=>{
 
 function handleYes(questionId){
   setYesQuestions((previousState)=>{
-    return [...previousState,questionId]
+    const filteredList= previousState.filter((id)=>{
+      return id !== questionId
+    })
+    return [...filteredList,questionId]
 })
 }
 
