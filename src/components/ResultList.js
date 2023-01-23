@@ -2,21 +2,22 @@ import React, { useEffect} from "react";
 import { fetchUserResultAsync } from "../store";
 import {  useDispatch, useSelector } from "react-redux";
 import { Fragment } from "react";
+import { getYesResults } from "../store";
 
 export default function ResultList(){
-  const results = useSelector((state) => state.userResult);
+  const results = useSelector((state) => state.result);
   console.log(results)
   const dispatch = useDispatch();
 
 
-  useDispatch(() => {
-    dispatch(fetchUserResultAsync());
+  useEffect(() => {
+    dispatch(getYesResults());
   }, []);
 
-  const renderedYesResults = results.map((result) => {
+  const renderedYesResults = results.selectedResults.map((result) => {
     return (
       <div>
-      <ul key={result.userId}>
+      <ul key={result.id}>
         <li> {result.recommendation}</li>
       </ul>
       </div>

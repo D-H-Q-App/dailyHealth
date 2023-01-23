@@ -26,7 +26,7 @@ router.get("/:id", async (req, res, next) => {
 
 router.post("/", async (req, res, next) => {
   try {
-    const newUserResult = await userResultsModel.create(req.body);
+    const newUserResult = await userResultsModel.findOrCreate({where: req.body});
     res.json(newUserResult);
   } catch (error) {
     next(error);

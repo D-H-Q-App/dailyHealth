@@ -17,9 +17,30 @@ export const creatingYesResultsAsync = createAsyncThunk(
   }
 );
 
+export const getYesResults = createAsyncThunk(
+  "result/getYesResults",
+  async()=>{
+    try{
+      const userResults = await axios.get('http://localhost:3000/api/userresults')
+      const resultIds = userResults.data.map((result)=>{
+        return result.resultId
+      })
+      console.log(resultIds)
+      const listOfResults = await axios.get('http://localhost:3000/api/results')
+      const exactResults = listOfResults.data.filter((result)=> {
+        return resultIds.includes(result.id)
+      })
+      console.log(exactResults)
+      return exactResults
+    }catch(error){
+      console.log(error)
+    }
+  }
+);
+
 const resultSlice = createSlice({
   name: "result",
-  initialState: {submitting:false, success:false, resultId:[]},
+  initialState: {submitting:false, success:false, resultId:[], selectedResults: []},
   reducers: {},
   extraReducers(builder) {
     builder.addCase(creatingYesResultsAsync.fulfilled, (state, action) => {
@@ -29,6 +50,10 @@ const resultSlice = createSlice({
     builder.addCase(creatingYesResultsAsync.pending, (state, action) => {
       state.submitting=true
     });
+    builder.addCase(getYesResults.fulfilled, (state, action)=> {
+      console.log(action.payload)
+      state.selectedResults = action.payload
+    })
 
   },
 });
