@@ -46,7 +46,7 @@ module.exports = [
   },
   {
     recommendation:
-      "Add more cooked green vegtables to your diet, like kale, celery, green beans, etc.  Include dry ginger and black pepper in your cooking. Enjoy low-sodium and lightly buttered popcorn, unsweetened puffed rice or puffed barley when you need a snack.",
+      "Add more cooked green vegtables to your diet, like kale, celery, green beans, etc. Include dry ginger and black pepper in your cooking. Enjoy low-sodium and lightly buttered popcorn, unsweetened puffed rice or puffed barley when you need a snack.",
     questionId: 10,
   },
   {

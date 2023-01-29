@@ -1,6 +1,7 @@
 import React, { useEffect} from "react";
 import {  useDispatch, useSelector } from "react-redux";
 import { Fragment } from "react";
+import { Box, FormControl, TextField, FormHelperText} from "@mui/material";
 import { getYesResults } from "../store";
 
 export default function ResultList(){
@@ -10,7 +11,7 @@ export default function ResultList(){
 
 
   useEffect(() => {
-    dispatch(getYesResults());
+    // dispatch(getYesResults());
   }, []);
 
   const renderedYesResults = results.selectedResults.map((result) => {
@@ -22,5 +23,20 @@ export default function ResultList(){
       </div>
     );
   });
-  return <Fragment> {renderedYesResults}</Fragment>;
+  return <Fragment>
+    {renderedYesResults}
+    <Box
+       m={1}
+        //margin
+       display="flex"
+      justifyContent="center"
+      alignItems="center"
+      >
+        <FormControl justifyContent="right" align="right">
+          <TextField id="outlined-basic" label="Email Addresss" variant="outlined" size="small" />
+          <FormHelperText id="my-helper-text">Email your results here. We'll never share your email! It gets deleted after results are sent.</FormHelperText>
+        </FormControl>
+    </Box>
+
+</Fragment>;
 }

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { FormGroup, FormControlLabel, Checkbox, Button} from "@mui/material";
 import { creatingYesResultAsync } from "../store";
 import { useNavigate } from "react-router-dom";
+import { getYesResults, saveResultIds } from "../store/resultsSlice";
 
 
 
@@ -46,7 +47,7 @@ function handleSubmit(){
   // yesQuestions.forEach((id)=>{
   //   dispatch(creatingYesResultAsync({id}))
   // })
-  dispatch(creatingYesResultAsync({ids:yesQuestions}))
+  dispatch(getYesResults(yesQuestions))
   navigate('/results')
 }
 

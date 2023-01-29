@@ -1,6 +1,9 @@
 const Sequelize = require("sequelize");
 const db = require("../database");
+// const jwt = require('jsonwebtoken')
+// const bcrypt = require('bcrypt');
 
+// const SALT_ROUNDS = 5;
 
 const User = db.define("user", {
   firstName: {
