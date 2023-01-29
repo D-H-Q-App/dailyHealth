@@ -18,7 +18,7 @@ function HomePage() {
         {" "}
         Here, similar to Ayurvedic Medicine, we believe food can be healing.
         Below, we have a daily yes or no health quiz that helps give food suggestions
-        based on any imbalances you may or may not be experincing! Some of these questions may sound a little fare fetch or wild to you but go with it our bodies are weird sometime! If you are only experiencing one of the symptoms listed please still answer yes. {" "}
+        based on any imbalances you may or may not be experincing! Some of these questions may sound a little fare fetch or wild to you but go with it our bodies are weird sometime! If you're only experiencing one of the symptoms listed, please still answer yes. {" "}
       </Typography>
 
      <div>
