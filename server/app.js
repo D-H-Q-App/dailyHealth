@@ -13,6 +13,7 @@ app.use(cors());
 app.use(volleyball);
 
 app.use("/api", require("./api/index.js"));
+app.use('/auth', require('./auth/index.js'))
 
 app.use("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/index.html"));
