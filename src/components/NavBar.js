@@ -104,7 +104,7 @@ function Navbar() {
         </IconButton>
         <Typography onClick={redirectToHome
                 } variant="h6" align='center' component="div" sx={{ flexGrow: 6}}>
-          D.H.Q.
+         Daily Health Quiz
         </Typography>
 
       </Toolbar>

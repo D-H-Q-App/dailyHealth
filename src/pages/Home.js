@@ -1,14 +1,13 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { BgImages } from "../components/BgImages";
 import Questions from "../components/Questions";
 
 function HomePage() {
   return (
     <div>
 
-      <Box sx={{ backgroundImage: `url(${BgImages})`, mt: 2 }}>
+      <Box sx={{ mt: 2 }}>
         <Typography variant="h3" color="primary" align="center">
           Hi, welcome to the your Daily Health Quiz!
         </Typography>
@@ -18,7 +17,7 @@ function HomePage() {
         {" "}
         Here, similar to Ayurvedic Medicine, we believe food can be healing.
         Below, we have a daily yes or no health quiz that helps give food suggestions
-        based on any imbalances you may or may not be experincing! Some of these questions may sound a little fare fetch or wild to you but go with it our bodies are weird sometime! If you're only experiencing one of the symptoms listed, please still answer yes. {" "}
+        based on any imbalances you may or may not be experincing! Some of these questions may sound a little far fetched or wild to you but go with it, our bodies are weird sometime! If you're only experiencing one of the symptoms listed, please still answer yes. {" "}
       </Typography>
 
      <div>
