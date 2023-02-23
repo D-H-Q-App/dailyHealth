@@ -30135,16 +30135,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/components/BgImages.js":
-/*!************************************!*\
-  !*** ./src/components/BgImages.js ***!
-  \************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
 /***/ "./src/components/NavBar.js":
 /*!**********************************!*\
   !*** ./src/components/NavBar.js ***!
@@ -30282,7 +30272,7 @@ function Navbar() {
     sx: {
       flexGrow: 6
     }
-  }, "D.H.Q."))));
+  }, "Daily Health Quiz"))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
 
@@ -30490,7 +30480,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 function HomePage() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Since I was 14, I\u2019ve always been fascinated with health, biology, and epigenetics. I was a Nutrition minor in college and I continued learning and studying other cultures approaches to Nurtrition and Health. I struggled with many health issues including such severe allergies that I used to get five to six sinus infections a year. I tried all sorts of different diets and lifestyle practices. I decided to eat primarily vegan. That helped a lot. Then I got really into the raw vegan and digest enzyme craze. Although my sinus infections and allergies were gone, I was getting really bad puffiness and dark circles under my eyes to a point where I looked like I was dying, no joke. As an actor on camera, I started really worrying about my appearance and was seriously considering getting expensive plastic surgeries. I also couldn\u2019t eat sugar, not even fruit, without my blood sugar spiking. I couldn\u2019t eat much of anything without it aggravating the bags under my eyes and digestion. I was bloated, tired, depressed, and lethargic.  I knew something wasn\u2019t right. I was eating \u201Cso well.\u201D What was going on? I went to see a few Western doctors and nutritionists and they all said, \u201CThat\u2019s just what happens when you get older.\u201D However, if it was \u201Cold age,\u201D why would the issues come and go? I decided to seek Eastern medicine. I started seeing an Ayurvedic Practitioner once a month. Within a few months of implementing the food choices and lifestyle practices she suggested for my mind-body constitution, along with prescribed Ayurvedic herbal medicines, the dark circles and puffiness under my eyes diminished and I could eat wholesome sweets without having blood sugar spikes. I was also way more productive and happier! I was so amazed by how joyful, healthy, whole, and balanced I felt that I decided to bring a web application to help bring more balance to there health. My self education has given me the in-depth the tool to help guide you in your journey of reclaiming your health and living a more balanced and happier life. If this sounds like something you would like to accomplish, take this quiz as often as your life and click here to learn more about Ayurveda. Let\u2019s get started living your happiest and healthiest life.");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "main"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "aboutUs"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "./images/about.png",
+    style: {
+      height: 200,
+      width: 200,
+      display: "flex",
+      justify: "flex-end",
+      alignItems: "center"
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Since I was 14, I\u2019ve always been fascinated with health, biology, and epigenetics. I was a Nutrition minor in college and I continued learning and studying other cultures approaches to Nurtrition and Health.I struggled with many health issues including such severe allergies that I used to get five to six sinus infections a year. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "I tried all sorts of different diets and lifestyle practices. I decided to eat primarily vegan. That helped a lot. Then I got really into the raw vegan and digest enzyme craze. Although my sinus infections and allergies were gone, I was getting really bad puffiness and dark circles under my eyes to a point where I looked like I was dying, no joke. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "As an actor on camera, I started really worrying about my appearance and was seriously considering getting expensive plastic surgeries. I also couldn\u2019t eat sugar, not even fruit, without my blood sugar spiking. I couldn\u2019t eat much of anything without it aggravating the bags under my eyes and digestion. I was bloated, tired, depressed, and lethargic.  I knew something wasn\u2019t right. I was eating \u201Cso well.\u201D What was going on? I went to see a few Western doctors and nutritionists and they all said, \u201CThat\u2019s just what happens when you get older.\u201D However, if it was \u201Cold age,\u201D why would the issues come and go? I decided to seek Eastern medicine. I started seeing an Ayurvedic Practitioner once a month. Within a few months of implementing the food choices and lifestyle practices she suggested for my mind-body constitution, along with prescribed Ayurvedic herbal medicines, the dark circles and puffiness under my eyes diminished and I could eat wholesome sweets without having blood sugar spikes. I was also way more productive and happier!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "I was so amazed by how joyful, healthy, whole, and balanced I felt that I decided to bring a web application to help bring more health to others. My self education has given me the in-depth the tool to help guide you in your journey of reclaiming your health and living a more balanced and happier life."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "If this sounds like something you would like to accomplish, take this quiz as often as you like and if you're interested in working with an Ayurvedic Practitioner I highly suggest Julier Bernier or any of the practionerst at Kerela. Let\u2019s get started living your happiest and healthiest life.")));
 }
 
 /***/ }),
@@ -30508,30 +30511,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Typography/Typography.js");
-/* harmony import */ var _mui_system__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/system */ "./node_modules/@mui/system/esm/Box/Box.js");
-/* harmony import */ var _components_BgImages__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/BgImages */ "./src/components/BgImages.js");
-/* harmony import */ var _components_BgImages__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_BgImages__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Questions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Questions */ "./src/components/Questions.js");
-
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Typography/Typography.js");
+/* harmony import */ var _mui_system__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/system */ "./node_modules/@mui/system/esm/Box/Box.js");
+/* harmony import */ var _components_Questions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Questions */ "./src/components/Questions.js");
 
 
 
 
 function HomePage() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_system__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_system__WEBPACK_IMPORTED_MODULE_2__["default"], {
     sx: {
-      backgroundImage: "url(".concat(_components_BgImages__WEBPACK_IMPORTED_MODULE_1__.BgImages, ")"),
       mt: 2
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
     variant: "h3",
     color: "primary",
     align: "center"
-  }, "Hi, welcome to the your Daily Health Quiz!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "Hi, welcome to the your Daily Health Quiz!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
     variant: "h4",
     color: "secondary"
-  }, " ", "Here, similar to Ayurvedic Medicine, we believe food can be healing. Below, we have a daily yes or no health quiz that helps give food suggestions based on any imbalances you may or may not be experincing! Some of these questions may sound a little fare fetch or wild to you but go with it our bodies are weird sometime! If you're only experiencing one of the symptoms listed, please still answer yes. ", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Questions__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Note we have studied nutrition and Ayurvedic medicine however we are not certified Ayurvedic or Western Doctors. These are suggestions and we are not held liable. All these suggests are food related not herbal. If you would like to see a trained Ayuvedic Doctor. I highly suggest contacting Kerala or searching for a doctor at NAMA.", " "));
+  }, " ", "Here, similar to Ayurvedic Medicine, we believe food can be healing. Below, we have a daily yes or no health quiz that helps give food suggestions based on any imbalances you may or may not be experincing! Some of these questions may sound a little far fetched or wild to you but go with it, our bodies are weird sometime! If you're only experiencing one of the symptoms listed, please still answer yes. ", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Questions__WEBPACK_IMPORTED_MODULE_1__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Note we have studied nutrition and Ayurvedic medicine however we are not certified Ayurvedic or Western Doctors. These are suggestions and we are not held liable. All these suggests are food related not herbal. If you would like to see a trained Ayuvedic Doctor. I highly suggest contacting Kerala or searching for a doctor at NAMA.", " "));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomePage);
 
