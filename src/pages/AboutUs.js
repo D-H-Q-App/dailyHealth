@@ -11,7 +11,6 @@ export default function HomePage() {
       <img src="./images/about.png" style={{
           height: 200,
           width: 200,
-          display: "flex",
           justify: "flex-end",
           alignItems: "center",
         }}></img>
@@ -23,7 +22,7 @@ export default function HomePage() {
 
         <p>I was so amazed by how joyful, healthy, whole, and balanced I felt that I decided to bring a web application to help bring more health to others. My self education has given me the in-depth the tool to help guide you in your journey of reclaiming your health and living a more balanced and happier life.</p>
 
-        <p>If this sounds like something you would like to accomplish, take this quiz as often as you like and if you're interested in working with an Ayurvedic Practitioner I highly suggest Julier Bernier or any of the practionerst at Kerela. Let’s get started living your happiest and healthiest life.</p>
+        <p>If this sounds like something you would like to accomplish, take this quiz as often as you like and if you're interested in working with an Ayurvedic Practitioner I highly suggest Julie Bernier or any of the practioners or doctors at Kerala. Let’s get started living your happiest and healthiest life.</p>
       </div>
     </div>
   );

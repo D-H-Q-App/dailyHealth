@@ -33,7 +33,7 @@ module.exports = [
   },
   {
     question:
-      "Are you experiencing any or all of these symptoms: cold body, colds, caugh, congestion, sinus problems, or unsual paleness?",
+      "Are you experiencing any or all of these symptoms: cold body, colds, cough, congestion, sinus problems, or unsual paleness?",
   },
   {
     question:
@@ -53,7 +53,7 @@ module.exports = [
   },
   {
     question:
-      "Are you experiencing any or all of these symptoms: nausea, vomiting, diarrhea, oily skin, scne, or skin blisters?",
+      "Are you experiencing any or all of these symptoms: nausea, vomiting, diarrhea, oily skin, acne, or skin blisters?",
   },
   {
     question:
@@ -65,7 +65,7 @@ module.exports = [
   },
   {
     question:
-      "Are you experiencing any or all of these symptoms: sensitivity to heat and light, or ringing in the years? ",
+      "Are you experiencing any or all of these symptoms: sensitivity to heat and light, or ringing in the ears?",
   },
   {
     question:

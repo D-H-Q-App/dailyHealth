@@ -10,7 +10,7 @@ const Result = db.define("result", {
     },
   },
   recommendation: {
-    type: Sequelize.STRING,
+    type: Sequelize.TEXT,
     allowNull: false,
   },
 });

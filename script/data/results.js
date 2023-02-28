@@ -36,7 +36,7 @@ module.exports = [
   },
   {
     recommendation:
-      "Add more quinoa, barley, popcorn, sauteed bitter melon, and Tulsi Tear to your diet",
+      "Add more quinoa, barley, popcorn, sauteed bitter melon, and Tulsi Tea to your diet. Avoid heavy foods like sweets, beef, and pork.",
     questionId: 8,
   },
   {
@@ -46,7 +46,7 @@ module.exports = [
   },
   {
     recommendation:
-      "Add more cooked green vegtables to your diet, like kale, celery, green beans, etc. Include dry ginger and black pepper in your cooking. Enjoy low-sodium and lightly buttered popcorn, unsweetened puffed rice or puffed barley when you need a snack.",
+      "Add more cooked green vegetables to your diet, like kale, celery, green beans, etc. Include dry ginger and black pepper in your cooking. Enjoy low-sodium and lightly buttered popcorn, unsweetened puffed rice or puffed barley when you need a snack. Avoid heavy foods like sweets, beef, and pork.",
     questionId: 10,
   },
   {
@@ -60,7 +60,7 @@ module.exports = [
   },
   {
     recommendation:
-      "Add more quinoa, barley, healthy popcorn, sauteed bitter melon, cooked kale, and Tulsi Tear to your diet",
+      "Add more quinoa, barley, healthy popcorn, sauteed bitter melon, cooked kale, and Tulsi Tea to your diet",
     questionId: 13,
   },
   {
@@ -84,7 +84,7 @@ module.exports = [
   },
   {
     recommendation:
-      "Avoid accid foods like coffee or overly spiced foods. Add more warm milks or cream to your diet.",
+      "Avoid acidic foods like coffee or overly spiced foods. Add more warm milks or cream to your diet.",
     questionId: 18,
   },
   {
