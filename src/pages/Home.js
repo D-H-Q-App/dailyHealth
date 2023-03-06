@@ -26,7 +26,7 @@ function HomePage() {
       <p>
         Note we have studied nutrition and Ayurvedic medicine however we're not
         certified Ayurvedic or Western Doctors. These are suggestions and we are
-        not held liable. All these suggests are food related not herbal. If you'd like to see a trained Ayuvedic Doctor. I highly suggest contacting Kerala or searching for a doctor at NAMA.{" "}
+        not held liable. All these suggestions are food related not herbal. If you'd like to see a trained Ayuvedic Doctor. I highly suggest contacting Kerala or searching for a doctor at NAMA.{" "}
       </p>
     </div>
   );
