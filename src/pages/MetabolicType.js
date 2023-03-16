@@ -5,7 +5,7 @@ export default function MetabolicType(){
     <div>
 
   <h1>What are the three doshas?</h1>
-<h2>Kapha dosha</h2>
+<h2 className="kapha-title">Kapha dosha</h2>
 <p>Kapha types have strong frames and are naturally athletic as long they are exercising regularly to manage their tendency to gain weight. The influence of the earth and water elements makes them innately stable, compassionate, and loyal. They appreciate doing things in a methodical, step-by-step manner, and prefer a regular routine in their personal and professional lives. When imbalanced they can become unmotivated, stubborn, and complacent even when change is necessary. Their metabolism tends to be slow and their appetite for both food and stimulation is less intense than vata or pitta types. They benefit from exposing themselves to new environments, people, and occasionally fasting.</p>
 
 <h2>Pitta dosha</h2>
