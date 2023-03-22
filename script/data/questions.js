@@ -17,7 +17,7 @@ module.exports = [
   },
   {
     question:
-      "Are you experiencing any or all of these symptoms: tremors, twitching, fear, enxiety, or insecurity?",
+      "Are you experiencing any or all of these symptoms: tremors, twitching, fear, anxiety, or insecurity?",
   },
   {
     question:
