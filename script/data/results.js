@@ -60,7 +60,7 @@ module.exports = [
   },
   {
     recommendation:
-      "Add more quinoa, barley, healthy popcorn, sauteed bitter melon, cooked kale, and Tulsi Tea to your diet",
+      "Add more quinoa, barley, healthy popcorn, sauteed bitter melon, cooked kale, and Tulsi Tea to your diet. And avoid heavy foods like beef, pork, or sweets.",
     questionId: 13,
   },
   {
