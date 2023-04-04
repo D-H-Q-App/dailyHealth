@@ -65,7 +65,7 @@ module.exports = [
   },
   {
     recommendation:
-      "Enjoy some dry toast, cooked milley or barley, sauteed melon, and Tulsi tea",
+      "Enjoy some dry toast, cooked millet or barley, sauteed bitter melon, and Tulsi tea",
     questionId: 14,
   },
   {
