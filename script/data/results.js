@@ -79,7 +79,7 @@ module.exports = [
   },
   {
     recommendation:
-      "Enjoy more cheese, yogurt, black lentils, cream of wheat, ripe mangos or bananas, red meat, and if its summer time, a little ice cream at lunch time!",
+      "Enjoy more cheese, yogurt, black lentils, cream of wheat, ripe mangos or bananas, red meat, and if its summer time, possibly a little ice cream at lunch time!",
     questionId: 17,
   },
   {
