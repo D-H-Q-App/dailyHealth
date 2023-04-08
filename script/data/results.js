@@ -31,7 +31,7 @@ module.exports = [
   },
   {
     recommendation:
-      "Enjoyed sauteed okra, cooked black lentils, and  Psyllium husk bread",
+      "Enjoyed sauteed okra, cooked black lentils, and Psyllium husk bread",
     questionId: 7,
   },
   {

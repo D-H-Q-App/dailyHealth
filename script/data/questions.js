@@ -1,11 +1,11 @@
 module.exports = [
   {
     question:
-      "Are you experiencing any or all of these symptoms: dry skin, hair, eyes, ears, lips, joints, stools? bloating, gas, and/or dehydration?",
+      "Are you experiencing any or all of these symptoms: dry skin, hair, eyes, ears, lips, joints, stools? Bloating, gas, and/or dehydration?",
   },
   {
     question:
-      "Are you experiencing any or all of these symptoms: light-headedness, restless mind, ungroundedness,dizziness, thinness, or unwanted/extreme weightloss?",
+      "Are you experiencing any or all of these symptoms: light-headedness, restless mind, ungroundedness, dizziness, thinness, or unwanted/extreme weightloss?",
   },
   {
     question:
