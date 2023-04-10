@@ -17,4 +17,10 @@ module.exports = [
     email: "Tarik@example.com",
     password: "123456",
   },
+  {
+    firstName: "Cora",
+    lastName: "Wood",
+    email: "Cora@example.com",
+    password: "123456",
+  },
 ];
