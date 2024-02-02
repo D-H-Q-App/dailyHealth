@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build-watch & npm run start-server",
-    "build": "npm i && npm run build",
+    "build": "npm i && react-scripts build",
     "build-watch": "webpack -w",
     "start-server": "nodemon --watch server -e js,html server/index.js",
     "seed": "node script/seed.js"
@@ -33,6 +33,7 @@
     "react-dom": "^18.1.0",
     "react-redux": "^v8.0.1",
     "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
     "run": "^1.4.0",
     "sequelize": "^6.20.0",
     "server": "^1.0.38",
@@ -48,5 +49,17 @@
     "babel-loader": "8.2.5",
     "webpack": "^5.72.0",
     "webpack-dev-server": "^4.7.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
