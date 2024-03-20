@@ -55,7 +55,7 @@ function handleSubmit(){
 
   const renderedQuestions = questions.map((question) => {
     return (
-      <div key={question.id}>
+      <div className="questionList" key={question.id}>
         <h3> {question.question}</h3>
         <div>
           <FormGroup>

@@ -8,7 +8,8 @@
     "build": "npm i && npm run build-watch",
     "build-watch": "webpack -w",
     "start-server": "nodemon --watch server -e js,html server/index.js",
-    "seed": "node script/seed.js"
+    "seed": "node script/seed.js",
+    "start-react": "npm i && react-scripts build && react-scripts start"
   },
   "keywords": [],
   "author": "",
