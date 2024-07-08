@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "dailyHealthTime": "daily-health-quiz",
+    "default": "daily-health-quiz"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
