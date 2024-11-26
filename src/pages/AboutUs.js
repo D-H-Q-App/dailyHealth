@@ -14,7 +14,7 @@ export default function HomePage() {
           display: "flex",
           alignItems: "center",
         }}/>
-        <p>Since I was 14, I’ve always been fascinated with health, biology, and epigenetics. I was a Nutrition minor in college and I continued learning and studying other cultures approaches to Nurtrition and Health.I struggled with many health issues including such severe allergies that I used to get five to six sinus infections a year. </p>
+        <p>Since I was 14, I’ve always been fascinated with health, biology, and epigenetics. I was a Nutrition minor in college and I continued learning and studying other cultures approaches to Nutrition and Health.I struggled with many health issues including such severe allergies that I used to get five to six sinus infections a year. </p>
 
         <p>I tried all sorts of different diets and lifestyle practices. I decided to eat primarily vegan. That helped a lot. Then I got really into the raw vegan and digest enzyme craze. Although my sinus infections and allergies were gone, I was getting really bad puffiness and dark circles under my eyes to a point where I looked like I was dying, no joke. </p>
 
